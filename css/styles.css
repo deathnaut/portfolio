@@ -51,6 +51,11 @@ nav ul {
   margin-right: 21px;
 }
 
+ul {
+  padding: 0;
+  justify-content: flex-start;
+}
+
 
 a {
   padding: 0 10px;
@@ -94,6 +99,17 @@ nav a {
   flex-direction: row;
 }
 
+.projects-container {
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.about-container {
+  width: 950px;
+  margin: 0 200px;
+  font-size: 24px;
+}
+
 #kitty {
   padding: 0px 36%;
   height: 250px;
@@ -109,6 +125,11 @@ nav a {
 .project img {
   height: 150px;
   width: auto;
+}
+
+.description {
+  max-width: 299px;
+  overflow-wrap: break-word !important;
 }
 
 #headshot {
@@ -180,6 +201,7 @@ button {
   width: 100px;
   height: 40px;
   transition: all 0.5s ease;
+  font-size: 14px;
 }
 
 button:hover {
