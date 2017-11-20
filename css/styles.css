@@ -79,7 +79,7 @@ nav a {
 .main, .secondary {
   flex: 1;
   opacity: 0;
-  margin: 20px 50px;
+  margin: 20px 0;
 }
 
 .secondary {
@@ -93,9 +93,10 @@ nav a {
 
 .container {
   display: flex;
-  flex: 7;
+  flex: 5;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: auto 10px;
 }
 
 .projects-container, .home-container {
@@ -133,8 +134,9 @@ nav a {
   width: 100%;
 }
 
-h1 .project {
-  font-size: 72px;
+h2 {
+  font-size: 36px;
+  font-style: italic;
 }
 
 .synchrono {
@@ -142,11 +144,11 @@ h1 .project {
 }
 
 .kollaboscope {
-  background: url("../images/kollaboscope.png") no-repeat;
+  background: url("../images/coming-soon.png") no-repeat;
 }
 
 .nommad {
-  background: url("../images/nommad.png") no-repeat;
+  background: url("../images/coming-soon.png") no-repeat;
 }
 
 
@@ -257,7 +259,7 @@ footer p {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #E85F5C;
+    background-color: #30BDFF;
 }
 
 @keyframes slidein {
