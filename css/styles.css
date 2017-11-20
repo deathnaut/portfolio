@@ -105,6 +105,7 @@ nav a {
 
 .projects-container {
   flex-direction: column;
+  height: 100%;
 }
 
 .about-container, .contact-container {
@@ -136,26 +137,21 @@ h1 .project {
   font-size: 72px;
 }
 
-.project img {
-  height: 150px;
-  width: auto;
-}
-
 .synchrono {
-  background: url("../images/coming-soon.png");
+  background: url("../images/coming-soon.png") no-repeat;
 }
 
 .kollaboscope {
-  background: url("../images/kollaboscope.png");
+  background: url("../images/kollaboscope.png") no-repeat;
 }
 
 .nommad {
-  background: url("../images/nommad.png");
+  background: url("../images/nommad.png") no-repeat;
 }
 
 
 .description {
-  display: none;
+  /*display: none;*/
   max-width: 100%;
   overflow-wrap: break-word !important;
 }
