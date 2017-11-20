@@ -21,7 +21,8 @@ html, body {
 .nav-bar {
   display: flex;
   flex-direction: row;
-  background-color: #30BDFF;
+  background-color: #FCD33F;
+  /*animation: linear .1s slidein;*/
 }
 
 #button-msg {
@@ -67,8 +68,8 @@ a {
 }
 
 nav a:hover {
-  transition: 1s ease;
-  background-color: #00ADFF;
+  transition: 0.5s ease;
+  color: white;
 }
 
 nav a {
@@ -92,7 +93,7 @@ nav a {
 
 .container {
   display: flex;
-  flex: 3;
+  flex: 7;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -102,10 +103,15 @@ nav a {
   max-height: 100%;
 }
 
-.about-container {
+.projects-container {
+  justify-content: space-between;
+}
+
+.about-container, .contact-container {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin: 0 10%;
 }
 
 #kitty {
@@ -123,6 +129,7 @@ nav a {
   align-self: flex-start;
   flex-direction: column;
   text-align: center;
+  max-width: 275px;
 }
 
 .project img {
@@ -131,7 +138,7 @@ nav a {
 }
 
 .description {
-  max-width: 299px;
+  max-width: 100%;
   overflow-wrap: break-word !important;
 }
 
@@ -140,13 +147,9 @@ nav a {
   width: auto;
 }
 
-.about{
+.about {
   margin-left: 50px;
   display: flex;
-  flex: 2;
-}
-
-.about {
   flex: 4;
   justify-content: space-between;
   margin-right: 50px;
@@ -162,9 +165,10 @@ form {
   font-family: 'Lato', sans-serif !important;
   width: 950px;
   text-align: center;
+  justify-content: space-around;
   align-content: space-around;
-  margin: 0 200px;
   font-size: 24px;
+  flex-shrink: 50%;
 }
 
 input, textarea, select {
@@ -240,4 +244,9 @@ footer p {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #E85F5C;
+}
+
+@keyframes slidein {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
 }
