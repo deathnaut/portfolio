@@ -13,4 +13,14 @@ $(document).ready(function () {
     }, 2000);
   });
 
+  $('#nommad').click(function(){
+    $('#nommad').animate();
+    console.log('a message should appear...');
+    $('#button-msg').show("slow");
+    console.log('redirecting...');
+    setTimeout(function () {
+      window.location.href = "https://nommad-app.firebaseapp.com/";
+    }, 2000);
+  });
+
 });
