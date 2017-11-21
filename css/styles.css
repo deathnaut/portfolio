@@ -18,6 +18,12 @@ html, body {
   width: auto;
 }
 
+.show{
+  color: red;
+  min-height: 0 !important;
+  height: 100px !important;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -105,8 +111,11 @@ nav a {
 }
 
 .projects-container {
+  display: flex;
+  overflow-y: scroll;
   flex-direction: column;
   height: 100%;
+  display: block;
 }
 
 .about-container, .contact-container {
@@ -130,8 +139,9 @@ nav a {
   display: flex;
   align-self: flex-start;
   text-align: center;
-  height: 100px;
+  max-height: 100px;
   width: 100%;
+  overflow: hidden;
 }
 
 h2 {
@@ -144,18 +154,31 @@ h2 {
 }
 
 .kollaboscope {
-  background: url("../images/coming-soon.png") no-repeat;
+  background: url("../images/kollaboscope.png") no-repeat;
 }
 
 .nommad {
+  background: url("../images/nommad.png") no-repeat;
+}
+
+.kuhl-photo {
+  background: url("../images/kuhl-photo.png") no-repeat;
+}
+
+.ttt {
   background: url("../images/coming-soon.png") no-repeat;
 }
 
 
 .description {
-  /*display: none;*/
+  margin-top: 100px;
   max-width: 100%;
+  text-align: left;
   overflow-wrap: break-word !important;
+}
+
+button .description {
+  float: right !important;
 }
 
 #headshot {
