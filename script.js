@@ -13,6 +13,16 @@ $(document).ready(function () {
     }
   });
 
+  $('#synchrono').click(function(){
+    $('#synchrono').animate();
+    console.log("a message should appear...");
+    $('#button-msg').show("slow");
+    console.log('redirecting...');
+    setTimeout(function () {
+      window.location.href = "https://synchrono-km.firebaseapp.com/";
+    }, 2000);
+  });
+
   $('#kollaboscope').click(function(){
     $('#kollaboscope').animate();
     console.log("a message should appear...");

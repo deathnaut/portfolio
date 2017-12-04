@@ -2,7 +2,30 @@
   border: 1px solid black;
 }*/
 
-/* TODO: align projects in projects.html properly */
+/*
+                     ,
+               ._  \/, ,|_
+               -\| \|;|,'_
+               `_\|\|;/-.
+                `_\\|/._
+               ,'__   __`.
+              / /_ | | _\ \
+             / ((o)| |(o)) \
+             |  `--/ \--'  |
+       ,--.   `.   '-'   ,'
+      (O..O)    `.uuuuu,'
+       \==/     _|nnnnn|_
+      .'||`. ,-' \_____/ `-.
+       _||,-'      | |      `.
+      (__)  _,-.   ; |   .'.  `.
+      (___)'   |__/___\__|  \(__)
+      (__)     :::::::::::  (___)
+        ||    :::::::::::::  (__)
+        ||    :::::::::::::
+             __|   | | _ |__
+      jrei  (_(_(_,' '._)_)_)
+
+*/
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -85,7 +108,7 @@ nav a {
 .main, .secondary {
   flex: 1;
   opacity: 0;
-  margin: 20px 0;
+  margin: 20px 100px;
 }
 
 .secondary {
@@ -99,7 +122,7 @@ nav a {
 
 .container {
   display: flex;
-  flex: 5;
+  flex: 4;
   flex-wrap: wrap;
   flex-direction: row;
   margin: auto 10px;
@@ -107,6 +130,7 @@ nav a {
 
 .projects-container, .home-container {
   overflow-y: scroll;
+  overflow: hidden;
   max-height: 100%;
 }
 
@@ -114,6 +138,7 @@ nav a {
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
+  width: 75%;
   height: 100%;
   display: block;
 }
@@ -123,6 +148,10 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-container {
+  width: 75%;
 }
 
 #kitty {
@@ -145,36 +174,59 @@ nav a {
 }
 
 h2 {
+  min-width: 250px;
   font-size: 36px;
   font-style: italic;
-}
-
-.synchrono {
-  background: url("../images/coming-soon.png") no-repeat;
-}
-
-.kollaboscope {
-  background: url("../images/kollaboscope.png") no-repeat;
-}
-
-.nommad {
-  background: url("../images/nommad.png") no-repeat;
-}
-
-.kuhl-photo {
-  background: url("../images/kuhl-photo.png") no-repeat;
+  text-align: center;
 }
 
 .ttt {
   background: url("../images/coming-soon.png") no-repeat;
 }
 
+.synchrono {
+  background-image: url("../images/synchrono.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  background-size: cover;
+}
+
+.kollaboscope {
+  background-image: url("../images/kollaboscope.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  background-size: cover;
+}
+
+.nommad {
+  background-image: url("../images/nommad.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  background-size: cover;
+}
+
+.kuhl-photo {
+  background-image: url("../images/kuhl-photo.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  background-size: cover;
+}
+
 
 .description {
-  margin-top: 100px;
+  margin: 100px 100px 100px -100px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
   max-width: 100%;
   text-align: left;
   overflow-wrap: break-word !important;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
 }
 
 button .description {
@@ -202,7 +254,7 @@ form {
   display: flex;
   flex-direction: column;
   font-family: 'Lato', sans-serif !important;
-  width: 950px;
+  width: 75%;
   text-align: center;
   justify-content: space-around;
   align-content: space-around;
